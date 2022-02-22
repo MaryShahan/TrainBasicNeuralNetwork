@@ -61,7 +61,7 @@ def train_model(data, weights, bias, l_rate, epochs):
             loss = cross_entropy(target, prediction)
             #print("loss:" , loss)
             individual_loss.append(loss)
-            #print("*******************Gradiant Descent**********************")
+            #Gradiant Descent
             #print("old value:")
             #print(weights, bias)
             weights = update_weights(weights, l_rate, target, prediction, feature)
